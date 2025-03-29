@@ -1,0 +1,5 @@
+database
+.venv
+log
+env_api
+__pycache__
