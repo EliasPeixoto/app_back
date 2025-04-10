@@ -5,6 +5,8 @@ import os
 
 from model.base import Base
 from model.veicle import Veicle
+from model.yard import Yard
+from model.income import Income
 
 db_path = "database/"
 # Verifica se o diretorio não existe
