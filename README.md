@@ -1,8 +1,10 @@
-# Minha API
+#                                   Back-end do Estacionator
 
-Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
+Este é o meu MVP da disciplina de **Desenvolvimento Full Stack Básico**
 
-O objetivo aqui é ilutsrar o conteúdo apresentado ao longo das três aulas da disciplina.
+Ele consiste numa aplicação para gerenciar um estacionamento. As funções básicas são de cadastrar os veiculos numa tabela própria, cadastrar veiculos em uma tabela que representará os veiculos que estão estacionados no momento e uma tabela somente para o cadastro da receita a cada dia de funcionamento do estacionamento.
+
+
 
 ---
 ## Como executar 
