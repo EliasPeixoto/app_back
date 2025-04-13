@@ -4,6 +4,8 @@ from typing import Union
 
 from  model import Base
 
+"""Classe que define a relação veículos - Serve para manter o cadastro de veículos separado do pátio"""
+
 class Veicle(Base):
     __tablename__= "veicle"
 
