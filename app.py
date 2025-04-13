@@ -24,6 +24,9 @@ income_tag = Tag(name="Receita", description="Adição dos valores na receita")
 
 @app.get('/', tags=[home_tag])
 def home():
+   
+    """Esta é a minha API para o gerenciamento de um estacionamento"""
+
     return redirect('/openapi')
 
 @app.post('/yard', tags=[yard_tag, veicle_tag],
@@ -66,7 +69,7 @@ def add_veicle(form: VeicleScheme):
          responses={"200": YardListScheme, "409": ErrorScheme, "400": ErrorScheme})
 def get_yard_list():
 
-    """Retorna a lista de pátio"""
+    """Retorna a lista de pátio. Este método coleta informações tanto da tabela de pátio quando da tabela de veículos."""
 
     session = Session()
     yard_list = session.query(Yard).join(Veicle)
@@ -83,7 +86,7 @@ def get_yard_list():
          responses={"200": YardViewScheme, "409": ErrorScheme, "400": ErrorScheme})
 def search_yard(query: VeicleSearchScheme):
 
-    """Retorna as informações de um veículo"""
+    """Retorna as informações de um veículo. Este método coleta informações tanto da tabela de pátio quando da tabela de veículos."""
 
     session = Session()
     veicle = session.query(Yard).join(Veicle).filter(Yard.plate == query.plate).first()
